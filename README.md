@@ -6,3 +6,4 @@
 - sync
 - workingdir
 - vim browse
+- alpha
