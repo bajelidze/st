@@ -5,3 +5,4 @@
 - scrollback
 - sync
 - workingdir
+- vim browse
