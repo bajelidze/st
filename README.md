@@ -5,5 +5,3 @@
 - scrollback
 - sync
 - workingdir
-- vim browse
-- alpha
