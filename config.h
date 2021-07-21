@@ -49,7 +49,7 @@ int allowaltscreen = 1;
  * near minlatency, but it waits longer for slow updates to avoid partial draw.
  * low minlatency will tear/flicker more, as it can "detect" idle too early.
  */
-static double minlatency = 8;
+static double minlatency = 1;
 static double maxlatency = 33;
 
 /*
@@ -76,7 +76,7 @@ static unsigned int cursorthickness = 2;
  * 0: disable (render all U25XX glyphs normally from the font).
  */
 const int boxdraw = 1;
-const int boxdraw_bold = 0;
+const int boxdraw_bold = 1;
 
 /* braille (U28XX):  1: render as adjacent "pixels",  0: use font */
 const int boxdraw_braille = 1;
@@ -212,8 +212,10 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
-	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ MODKEY,               XK_k,           kscrollup,      {.i = mousescrollincrement} },
+	{ MODKEY,               XK_j,           kscrolldown,    {.i = mousescrollincrement} },
+	//{ MODKEY,               XK_o,           kscrollup,      {.i = 5* mousescrollincrement} },
+	//{ MODKEY,               XK_i,           kscrolldown,    {.i = 5*mousescrollincrement} },
 };
 
 /*
