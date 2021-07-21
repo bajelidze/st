@@ -5,3 +5,5 @@
 - scrollback
 - sync
 - workingdir
+- alpha
+- font2
