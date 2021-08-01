@@ -7,3 +7,4 @@
 - workingdir
 - alpha
 - font2
+- ligatures

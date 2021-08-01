@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Consolas NF:pixelsize=14:antialias=true:autohint=true";
+static char *font = "FiraCode Nerd Font Mono:pixelsize=13:antialias=true:autohint=true";
 
 static char *font2[] = {"Twitter Color Emoji Regular:pixelsize=14:antialias=true:autohint=true"};
 
@@ -111,7 +111,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 1;
+float alpha = 0.9;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
