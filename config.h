@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Consolas NF:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Consolas NF:pixelsize=18:antialias=true:autohint=true";
 
 static char *font2[] = {"Twitter Color Emoji Regular:pixelsize=14:antialias=true:autohint=true"};
 
